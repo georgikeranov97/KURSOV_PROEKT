@@ -171,50 +171,5 @@
       "country": "Bulgaria",
       "id": 11
     }
-  ],
-  "register": [
-    {
-      "id": 1,
-      "username": "Test",
-      "password": "1234",
-      "email": "test@test.com",
-      "country": "Bulgaria",
-      "active": "true"
-    },
-    {
-      "username": "Test Ivanov",
-      "password": "123456",
-      "email": "test@ivanov.com",
-      "country": "Bulgaria",
-      "id": 4
-    },
-    {
-      "username": "Test Testov",
-      "password": "123456",
-      "email": "test@testov.com",
-      "country": "Bulgaria",
-      "id": 5
-    },
-    {
-      "username": "Milen Vasilev",
-      "password": "123456",
-      "email": "milen@mail.com",
-      "country": "Bulgaria",
-      "id": 6
-    },
-    {
-      "username": "Petko",
-      "password": "123456",
-      "email": "abv@abv.bg",
-      "country": "Bulgaria",
-      "id": 7
-    },
-    {
-      "username": "gosho97",
-      "password": "gosho97",
-      "email": "georgi.keranov97@gmail.com",
-      "country": "Bulgaria",
-      "id": 8
-    }
   ]
 }

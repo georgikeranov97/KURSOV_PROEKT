@@ -64,6 +64,7 @@ class Users extends React.Component {
                   <Input
                     placeholeder="Search..."
                     onChange={this.handleSearch}
+                    onClick={e => e.stopPropagation()}
                     id={value}
                   />
                 </div>
@@ -81,7 +82,7 @@ class Users extends React.Component {
           const editable = this.isEditing(record);
           if (value === 'action') {
             return editable ? (
-              <span>
+              <div className="actions-container">
                 <Button
                   className="green-btn save-btn"
                   onClick={() => this.onSave(record.id)}
@@ -92,9 +93,9 @@ class Users extends React.Component {
                   onClick={() => this.setState({ editingKey: '' })}
                   icon={<CloseOutlined />}
                 >Cancel</Button>
-              </span>
+              </div>
             ) : (
-              <span>
+              <div className="actions-container">
                 <Button
                   type="primary"
                   onClick={() => this.onEdit(record)}
@@ -111,7 +112,7 @@ class Users extends React.Component {
                     icon={<DeleteOutlined />}
                   >Delete</Button>
                 </Popconfirm>
-              </span>
+              </div>
             );
           } else if (value === 'active') {
             if (content) {
